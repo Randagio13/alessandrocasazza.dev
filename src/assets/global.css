@@ -1,0 +1,39 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  @apply font-mono;
+}
+
+h1 {
+  @apply text-4xl text-gray-900 font-semibold;
+}
+
+h2 {
+  @apply text-2xl text-gray-900 font-semibold;
+}
+
+p {
+  @apply text-xl text-gray-900 font-normal;
+}
+
+a {
+  @apply underline;
+}
+
+progress::-webkit-progress-bar {
+  @apply bg-gray-700 rounded;
+}
+
+progress::-webkit-progress-value {
+  @apply bg-red-600 rounded;
+}
+
+progress::-moz-progress-bar {
+  @apply bg-red-600 rounded;
+}
+
+progress {
+  @apply bg-gray-700 rounded;
+}
