@@ -27,16 +27,18 @@
 	<title>Alessandro Casazza - Senior Frontend Developer</title>
 </svelte:head>
 
-<div class="max-w-screen-xl mx-auto bg-red-600 px-10 py-16 shadow-md">
-	<div class="mx-auto flex justify-center items-center content-center block">
+<div class="bg-red-600 px-10 py-16 shadow-md">
+	<div class="container mx-auto flex flex-wrap md:flex-no-wrap justify-center items-center content-center block text-center md:text-left">
 		<div class="w-1/2 flex justify-end">
-			<Avatar className="h-40 w-40 rounded-full mr-6 object-cover shadow-md" src="ale.jpg" alt="Alessandro Casazza" />
+			<Avatar className="mx-auto h-40 w-40 rounded-full md:mr-6 object-cover shadow-md" src="ale.jpg" alt="Alessandro Casazza" />
 		</div>
 		<Intro className="w-full md:w-3/4 leading-relaxed" />
 	</div>
 </div>
-<div class="max-w-screen-xl mx-auto bg-gray-200 p-10 shadow-inner">
-	<h2 class="text-center">Skills</h2>
-	<Skills {logotypes} />
+<div class="mx-auto bg-gray-200 p-10 shadow-inner">
+	<div class="container mx-auto">
+		<h2 class="text-center">Skills</h2>
+		<Skills {logotypes} />
+	</div>
 </div>
 <Footer {socialIcons} />
