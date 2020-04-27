@@ -8,9 +8,9 @@
   },
   "scripts": {
     "dev": "sapper dev",
-    "build": "ls && sapper build",
+    "build": "sapper build",
     "deploy:test": "now -A now.test.json",
-    "export": "sapper export --legacy",
+    "export": "sapper export",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
