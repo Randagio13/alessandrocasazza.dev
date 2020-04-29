@@ -15,7 +15,7 @@ h2 {
 }
 
 p {
-  @apply text-xl text-gray-900 font-normal;
+  @apply text-xl text-black font-medium;
 }
 
 a {

@@ -6,7 +6,7 @@
   <div class="container mx-auto">
     <div class="text-center mb-2">
       {#each socialIcons as { src, alt, path }}
-        <a class="no-underline" href={path} target="_blank">
+        <a class="no-underline" rel="noreferrer" href={path} target="_blank">
           <img class="w-10 h-10 inline-block" src={src} alt={alt} />
         </a>
       {/each}
