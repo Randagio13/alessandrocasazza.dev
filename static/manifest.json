@@ -3,7 +3,7 @@
   "theme_color": "#e53e3e",
   "name": "Alessandro Casazza",
   "short_name": "AC",
-  "display": "minimal-ui",
+  "display": "standalone",
   "start_url": "/",
   "icons": [
     {
