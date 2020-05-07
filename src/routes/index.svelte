@@ -23,6 +23,11 @@
 		{ src: 'linkedin.svg', alt: 'Linkedin', path: '//www.linkedin.com/in/alessandrocasazza/' },
 	]
 </script>
+<script context="module">
+  export function preload({ params, query }) {
+    return this.fetch("sitemap.xml");
+  }
+</script>
 <svelte:head>
 	<title>Alessandro Casazza - Senior Frontend Developer</title>
 </svelte:head>
