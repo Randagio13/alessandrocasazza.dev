@@ -11,18 +11,18 @@ fs.readdirSync('./src/routes').forEach((file) => {
   }
 })
 
-const renderPosts = posts
-  .map(
-    (post) => `
-<url>
-  <loc>${BASE_URL}/blog/${post.slug}</loc>
-  <priority>0.69</priority>
-</url>
-`
-  )
-  .join('\n')
+// const renderPosts = posts
+//   .map(
+//     (post) => `
+// <url>
+//   <loc>${BASE_URL}/blog/${post.slug}</loc>
+//   <priority>0.69</priority>
+// </url>
+// `
+//   )
+//   .join('\n')
 
-const render = (pages, posts) => `<?xml version="1.0" encoding="UTF-8" ?>
+const render = (pages) => `<?xml version="1.0" encoding="UTF-8" ?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   ${pages
     .map(
